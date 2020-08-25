@@ -1,0 +1,48 @@
+.item-list {
+  display: flex;
+  flex-wrap: wrap; /*esto hace que los eventos se ajusten solitos y no sean una fila recta hacia la derecha*/
+}
+.figure {
+  margin: 30;
+}
+
+.item-box {
+  border: 1px solid red;
+  margin: 10px;
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  //background: #f4fbff; // = azul super clarito, como yo no lo veia bien, puse un tono mas oscuro
+  //background: #97c0f5;
+  background: whitesmoke;
+}
+
+.item-imageContainer {
+  margin: 0;
+  padding: 0;
+}
+
+.item-image {
+  object-fit: cover;
+  justify-items: center;
+}
+
+.item-details {
+  margin: 20px 30px;
+  background-color: white; //debe ser blanco
+  //margin-top: -20px; /*para que el cuadrito de los detalles quede como sobrepuesto a la imagen*/
+  position: relative; /*aplica sumado al anterior de margen negativo*/
+  padding: 10px;
+  text-align: center; /*para que se alineen los textos*/
+  object-fit: contain;
+}
+
+.item-description {
+  text-align: center;
+}
+
+.item-list-title {
+  margin-left: 20px;
+  justify-content: center;
+}

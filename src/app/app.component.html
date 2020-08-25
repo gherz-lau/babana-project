@@ -1,103 +1,15 @@
+<app-header></app-header>
 
-    <header class="header">
-        <div class="container"> 
-            <figure class="grupal">
-                <img src="/assets/group.png" height="230" width="500" />
-            </figure> 
-            
-        </div>
-    </header> 
+<section class="band">
+    <div class="container">
+        <h1>
+            Super <strong>Mario</strong> Bros<br />
+            Family & Co.
 
-    <section class="band">
-        <div class="container">
-            <h1>
-                Super <strong>Mario</strong> Bros<br/> 
-                Family & Co.
-                    
-            </h1>
-        </div>
-        </section>
-    
-    <section id="Itemsgroup" class="item-list">
-       <div class="container">       
-        <h2 class="items-list-title">Algunos Items</h2> 
-        
-        
-        <article class="item-box">
-            <figure class="item-imageContainer">
-                <img class="item-image" src="/assets/Turnip.jpg" height="200" width="200">
-            </figure>
-            <div class="item-details">
-                <h3 class="item-title">Turnip</h3>
-                <p class="item-description">Arrojable</p>
-                {{title}}
-                
-            </div>
-        </article>    
-        
-        <article class="item-box">
-            <figure class="item-imageContainer">
-                <img class="item-image" src="/assets/star.jpg" height="200" width="200">
-            </figure>
-            <div class="item-details">
-                <h3 class="item-title">Star</h3>
-                <p class="item-description">Invulnerabilidad momentánea</p>
-                {{title}}
-                
-            </div>
-        </article>    
+        </h1>
+    </div>
+</section>
 
-        <article class="item-box">
-            <figure class="item-imageContainer">
-                <img class="item-image" src="/assets/leaf.jpg" height="200" width="200">
-            </figure>
-            <div class="item-details">
-                <h3 class="item-title">Leaf</h3>
-                <p class="item-description">Volar/Flotar</p>
-                {{title}}
-                
-            </div>
-        </article>    
+<app-item-box></app-item-box>
 
-        <article class="item-box">
-            <figure class="item-imageContainer">
-                <img class="item-image" src="/assets/mush.jpg" height="200" width="200">
-            </figure>
-            <div class="item-details">
-                <h3 class="item-title">Red Mushroom</h3>
-                <p class="item-description">Aumenta estatura y fuerza</p>
-                {{title}}
-                
-            </div>
-        </article>        
-
-
-
-        </div>
-
-     </section>
-    
-    
-     <section id="BananaTest" class="bindi">
-        <div class="container">
-            
-           <form class="form-input">
-              <h3>B i n d i n g <br/> T e s t</h3>
-              <br/>
-              <label for="myInput">El Input  </label>
-              <input type="text" placeholder="Escribe" name= "myInput" [(ngModel)]="title">
- 
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div>
-                <p>Práctica @Keki <img src="/assets/mush.png" alt="Mushroom Click" height="30" width="30"></p>
-            </div>
-        </div>
-    </footer>
-
-
-
+<app-footer></app-footer>

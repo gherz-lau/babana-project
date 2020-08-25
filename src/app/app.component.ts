@@ -8,3 +8,4 @@ import { Component, NgModule } from '@angular/core';
 export class AppComponent {
   title = 'babana-project';
 }
+

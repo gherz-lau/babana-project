@@ -1,0 +1,9 @@
+.header //selector de encabezado
+{
+ background-color:  purple; 
+ display: flex;
+ height: 300px; //altura de la zona morada )o sea en encabezado)
+ justify-content: center; //centra el grupo verticalmente en el espacio del encabezado (o sea los 300px)
+ align-items: center; //centra el grupo horizontalmente
+
+}
