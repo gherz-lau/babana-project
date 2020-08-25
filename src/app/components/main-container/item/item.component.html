@@ -1,1 +1,9 @@
-<p>item works!</p>
+<article class="item">
+    <figure class="imageContainer">
+        <img class="image" [src]="itemObj.image" height="200" width="200">
+    </figure>
+    <div class="details">
+        <h3 class="title">{{itemObj.title}}</h3>
+        <p class="description">{{itemObj.description}}</p>
+    </div>
+</article>
