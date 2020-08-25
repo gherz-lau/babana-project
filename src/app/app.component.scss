@@ -1,0 +1,229 @@
+
+.header //selector de encabezado
+{
+ background-color:  purple; 
+ display: flex;
+ height: 300px; //altura de la zona morada )o sea en encabezado)
+ justify-content: center; //centra el grupo verticalmente en el espacio del encabezado (o sea los 300px)
+ align-items: center; //centra el grupo horizontalmente
+
+}
+
+.band { //selector de la banda donde puse la frase "suoer mario bros family and co"
+    
+    height: 120px;
+    background-color:  #1d252c;
+    display: flex;
+    justify-content: center; //centra la frase verticalmente en el espacio de la band (o sea los 120px)
+    align-items: center; //centra la frase horizontalmente
+    text-align: center; //hace que el texto esté formateado como centrado
+
+}
+
+
+  
+.figure {
+   margin: 30                                                     ;
+}
+    
+    
+    
+h1,
+h2,
+h3 {
+    font-family: 'Source Sans Pro', sans serif;
+    align-content: center;
+    justify-items: center;
+}
+    
+.body {
+    margin: 0;
+    padding: 500;
+
+}
+    
+    
+    
+    .portfolio
+    {
+    background: #fafafa;
+    padding: 20px; /*para que los elementos no esten pegados al borde izq*/
+    
+    }
+    
+    .project
+    {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    }
+    
+    .project-course,
+    .project-date,
+    .project-url
+    {
+    margin: 10px 0; 
+    
+    }
+    
+    .project strong {
+    font-family: 'Fjalla One', sans serif;
+    }
+    
+    .project-description
+    {
+    
+    font-size: 20px;
+    
+    }
+    
+    .project-title
+    {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    }
+    
+    .project-details
+    {
+    width: 500px;
+    }
+    
+    .project-imageContainer
+    {
+    width: 500px;
+    }
+    
+    
+        
+    h1
+    {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+    }
+    
+    
+    
+    h1 strong {
+    color: #026fff;
+    }
+    
+    
+    h2
+    {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+    }
+  
+    
+    .footer
+    {
+            background-color: #1d252c;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center; //centra la frase horizontalmente
+            text-align: center; //hace que el texto esté formateado como centrado
+    }
+    
+      
+    .item-list
+    {   display: flex;
+    flex-wrap: wrap; /*esto hace que los eventos se ajusten solitos y no sean una fila recta hacia la derecha*/
+    
+    }
+    
+    .item-box
+    {
+        border: 1px solid red;
+        margin: 10px;
+        width: 200px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        //background: #f4fbff; // = azul super clarito, como yo no lo veia bien, puse un tono mas oscuro
+        //background: #97c0f5;
+        background: whitesmoke;
+    }
+    
+    .item-imageContainer
+    {
+    margin: 0;
+    padding: 0;
+        
+    }
+    
+    .item-image{
+    object-fit: cover;
+    justify-items: center;
+        
+    }
+    
+    .item-details
+    {
+    margin: 20px 30px;
+    background-color: white; //debe ser blanco
+    //margin-top: -20px; /*para que el cuadrito de los detalles quede como sobrepuesto a la imagen*/
+    position: relative; /*aplica sumado al anterior de margen negativo*/
+    padding: 10px;
+    text-align: center; /*para que se alineen los textos*/
+    object-fit: contain;
+    }
+    
+    .item-description  {    
+    text-align: center;
+    }
+    
+        
+    .item-list-title
+    {
+    margin-left: 20px;
+    justify-content: center;
+    }
+    
+    .bindi
+    {
+    background-color: #056fff;
+    color: white;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+    }
+    
+      
+   
+    
+    .form-imput input
+    { border-color: gray;
+       
+        border-style: solid;
+        border-radius: 5px;
+        padding: 10px 20px 10px 30px;  
+    }
+    
+    .container {
+        width: 1000px;
+        margin:0 auto;
+        display: inherit;
+        justify-content: inherit;
+        align-items: inherit;
+        height: inherit;
+      
+    }
+    
