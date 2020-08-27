@@ -7,12 +7,32 @@
     justify-content: center;
   }
 
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    .add-button {
+      height: 32px;
+      background: purple;
+      border: none;
+      border-radius: 32px;
+      color: #fff;
+      margin-top: 1rem;
+      margin-left: 1rem;
+
+      &:hover {
+        background-color: rgb(153, 10, 153);
+      }
+    }
+  }
+
   .container-items {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     max-width: 800px;
-
   }
 }

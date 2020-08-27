@@ -2,12 +2,23 @@
   border: 1px solid red;
   margin: 10px;
   width: 200px;
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  //flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  //background: #f4fbff; // = azul super clarito, como yo no lo veia bien, puse un tono mas oscuro
-  //background: #97c0f5;
+  height: 360px;
+  max-height: 360px;
+
   background: whitesmoke;
+
+  &:hover{
+    .imageContainer{
+      .delete-button{
+        visibility: visible;
+      }
+    }
+  }
 
   .imageContainer {
     margin: 0;
@@ -17,17 +28,35 @@
       object-fit: cover;
       justify-items: center;
     }
+    .delete-button {
+      position: absolute;
+      margin-left: -26px;
+      margin-top: 5px;
+      background-color: white;
+      border: none;
+      color: rgb(160, 160, 160);
+      font-size: 18px;
+      visibility: hidden;
+      &:hover {
+        color: purple;
+        cursor: pointer;
+      }
+    }
   }
   .details {
-    margin: 20px 30px;
-    background-color: white; //debe ser blanco
-    //margin-top: -20px; /*para que el cuadrito de los detalles quede como sobrepuesto a la imagen*/
-    position: relative; /*aplica sumado al anterior de margen negativo*/
-    padding: 10px;
-    text-align: center; /*para que se alineen los textos*/
-    object-fit: contain;
-    .item-description {
+    margin: 15px;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      margin: 0.5em 0 0.5em 0; //throuble
+    }
+    .description {
       text-align: center;
+      margin: 0px;
     }
   }
 }
