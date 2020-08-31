@@ -24,6 +24,7 @@
 
       &:hover {
         background-color: rgb(153, 10, 153);
+        cursor: pointer;
       }
     }
   }
@@ -34,5 +35,7 @@
     align-content: center;
     flex-wrap: wrap;
     max-width: 800px;
+    min-width: 800px;
+    min-height: 300px;
   }
 }
