@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -9,7 +9,16 @@ export class ItemComponent implements OnInit {
   @Input()
   itemObj;
 
+  @Output() //para emitters
+  autoKillEmit = new EventEmitter<any>();  //pregunta sobre https://desarrolloweb.com/articulos/generics-typescript.html
+
+
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  deleteItem() {
+    this.autoKillEmit.emit(this.itemObj);
+  }
 }
