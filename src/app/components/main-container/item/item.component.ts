@@ -18,4 +18,10 @@ export class ItemComponent implements OnInit {
   deleteItem() {
     this.autoKillEmit.emit(this.itemObj);
   }
+  savedItem(formValue) {
+    console.log('llego', formValue);
+    this.itemObj.title = formValue.title;
+    this.itemObj.description = formValue.description;
+    this.itemObj.image = formValue.image;
+  }
 }

@@ -1,16 +1,22 @@
-.bindi {
-  background-color: #056fff;
-  color: white;
-  height: 180px;
+.itemForm {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
+  flex-direction: column;
 }
-.form-imput input {
-  border-color: gray;
+.form-container {
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
-  border-style: solid;
-  border-radius: 5px;
-  padding: 10px 20px 10px 30px;
+.imageRandom {
+  display: flex;
+  justify-content: space-between;
+  .nextBtn {
+    cursor: pointer;
+  }
+  .prevBtn {
+    cursor: pointer;
+  }
+  .ranBtn {
+    cursor: pointer;
+  }
 }

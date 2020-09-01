@@ -15,21 +15,9 @@ export class ItemBoxComponent implements OnInit {
     },
     {
       id: 2,
-      image: '/assets/star.jpg',
-      title: 'Star',
-      description: 'Invulnerabilidad momentánea',
-    },
-    {
-      id: 3,
-      image: '/assets/leaf.jpg',
-      title: 'Leaf',
-      description: 'Volar/Flotar',
-    },
-    {
-      id: 4,
-      image: '/assets/mush.jpg',
-      title: 'Red Mushroom',
-      description: 'Aumenta estatura y fuerza',
+      image: '',
+      title: '',
+      description: '',
     },
   ];
 
@@ -40,9 +28,9 @@ export class ItemBoxComponent implements OnInit {
   addNewItem() {
     this.listItems.push({
       id: this.listItems.length + 1,
-      image: '/assets/fireflower.jpg',
-      title: 'Fire Flower', //Fire for flowers
-      description: 'Descripcion fancy',
+      image: '',
+      title: '', //Fire for flowers
+      description: '',
     });
   }
   killChiild(item) {

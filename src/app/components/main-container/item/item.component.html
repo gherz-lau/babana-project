@@ -1,10 +1,14 @@
 <article class="item">
-    <figure class="imageContainer">
-        <img class="image" [src]="itemObj.image" height="200" width="200">
-        <button class="delete-button" title="Delete" (click)="deleteItem()">x</button>
-    </figure>
-    <div class="details">
-        <h3 class="title">{{itemObj.title}}</h3>
-        <p class="description">{{itemObj.description}}</p>
+    <div *ngIf="itemObj.image">
+        <figure class="imageContainer">
+            <img class="image" [src]="itemObj.image" height="200" width="200">
+            <button class="delete-button" title="Delete" (click)="deleteItem()">x</button>
+        </figure>
+        <div class="details">
+            <h3 class="title">{{itemObj.title}}</h3>
+            <p class="description">{{itemObj.description}}</p>
+        </div>
     </div>
+
+    <app-item-form *ngIf="!itemObj.image" (saveResult)="savedItem($event)"></app-item-form>
 </article>
