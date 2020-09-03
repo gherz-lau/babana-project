@@ -13,12 +13,6 @@ export class ItemBoxComponent implements OnInit {
       title: 'Turnip',
       description: 'Arrojable',
     },
-    {
-      id: 2,
-      image: '',
-      title: '',
-      description: '',
-    },
   ];
 
   constructor() {}

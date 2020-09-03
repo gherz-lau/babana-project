@@ -1,9 +1,10 @@
 <form class="itemForm">
     <img [src]="form.image" alt="" height="200" width="200" (click)="stopInterval()">
     <div class="imageRandom">
-        <button class="prevBtn" (click)="prev()"> < </button>
-        <button class="ranBtn" (click)="startInterval()"> * </button>
-        <button class="nextBtn" (click)="next()">></button>
+        <button class="prevBtn" (click)="prev()">
+            < </button>
+                <button class="ranBtn" (click)="startInterval()"> * </button>
+                <button class="nextBtn" (click)="next()">></button>
     </div>
 
     <div class="form-container">
@@ -12,7 +13,10 @@
         <p>Description</p>
         <input type="text" name="description" [(ngModel)]="form.description">
 
-        <button (click)="save()">Save</button>
+        <div class="buttons-container">
+            <button class="cancelBtn" (click)="cancel()">Cancel</button>
+            <button class="saveBtn" (click)="save()">Save</button>
+        </div>
     </div>
 
 </form>

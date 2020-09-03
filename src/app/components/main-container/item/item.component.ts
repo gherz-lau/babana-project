@@ -12,16 +12,32 @@ export class ItemComponent implements OnInit {
   @Output() //emiters
   autoKillEmit = new EventEmitter<any>();
 
+  isEditing: boolean;
+
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.itemObj.image) {
+      this.isEditing = false;
+    } else {
+      this.isEditing = true;
+    }
+  }
   deleteItem() {
     this.autoKillEmit.emit(this.itemObj);
   }
   savedItem(formValue) {
-    console.log('llego', formValue);
-    this.itemObj.title = formValue.title;
-    this.itemObj.description = formValue.description;
-    this.itemObj.image = formValue.image;
+    this.itemObj = formValue;
+    this.isEditing = false;
+  }
+  cancelItem(formValue) {
+    if (!formValue.title && !formValue.description) {
+      this.deleteItem();
+    } else {
+      this.isEditing = false;
+    }
+  }
+  editItem() {
+    this.isEditing = true;
   }
 }

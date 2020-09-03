@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item-form',
@@ -15,19 +15,37 @@ export class ItemFormComponent implements OnInit {
     '/assets/leaf.jpg',
     '/assets/Turnip.jpg',
   ];
+
   form = {
+    id: -1,
     image: '',
     title: '',
     description: '',
   };
+
+  @Input()
+  item = {
+    id: -1,
+    image: '',
+    title: '',
+    description: '',
+  };
+
   interval;
   @Output()
   saveResult = new EventEmitter<any>();
+  @Output()
+  cancelResult = new EventEmitter<any>();
 
   constructor() {}
 
   ngOnInit(): void {
-    this.startInterval();
+    this.form = Object.assign(this.form, this.item); //shallow copy
+    if (!this.item.image) {
+      this.startInterval();
+    } else {
+      this.interval = this.imageOptions.indexOf(this.form.image);
+    }
   }
   startInterval() {
     this.interval = setInterval(() => {
@@ -41,6 +59,7 @@ export class ItemFormComponent implements OnInit {
   }
 
   save() {
+    this.stopInterval();
     this.saveResult.emit(this.form);
     console.log('enviado', this.form);
   }
@@ -51,7 +70,7 @@ export class ItemFormComponent implements OnInit {
     if (this.interval >= this.imageOptions.length - 1) {
       this.interval--;
     } else if (this.interval == 0) {
-      this.interval = this.imageOptions.length -1;
+      this.interval = this.imageOptions.length - 1;
     } else {
       this.interval--;
     }
@@ -65,5 +84,8 @@ export class ItemFormComponent implements OnInit {
       this.interval++;
     }
     this.form.image = this.imageOptions[this.interval];
+  }
+  cancel() {
+    this.cancelResult.emit(this.form);
   }
 }

@@ -1,14 +1,19 @@
 <article class="item">
-    <div *ngIf="itemObj.image">
+    <div *ngIf="!isEditing">
         <figure class="imageContainer">
             <img class="image" [src]="itemObj.image" height="200" width="200">
             <button class="delete-button" title="Delete" (click)="deleteItem()">x</button>
+            <button class="edit-button" title="Edit" (click)="editItem()">e</button>
         </figure>
         <div class="details">
+            <small>{{itemObj.id}}</small>
             <h3 class="title">{{itemObj.title}}</h3>
             <p class="description">{{itemObj.description}}</p>
+            <a href="" [routerLink]="['/details/'+itemObj.id]" class="viewBtn">View</a>
         </div>
     </div>
 
-    <app-item-form *ngIf="!itemObj.image" (saveResult)="savedItem($event)"></app-item-form>
+    <app-item-form [item]="itemObj" *ngIf="isEditing" (saveResult)="savedItem($event)"
+        (cancelResult)="cancelItem($event)">
+    </app-item-form>
 </article>

@@ -15,6 +15,9 @@
       .delete-button {
         visibility: visible;
       }
+      .edit-button {
+        visibility: visible;
+      }
     }
   }
 
@@ -29,6 +32,20 @@
     .delete-button {
       position: absolute;
       margin-left: -26px;
+      margin-top: 5px;
+      background-color: white;
+      border: none;
+      color: rgb(160, 160, 160);
+      font-size: 18px;
+      visibility: hidden;
+      &:hover {
+        color: purple;
+        cursor: pointer;
+      }
+    }
+    .edit-button {
+      position: absolute;
+      margin-left: -50px;
       margin-top: 5px;
       background-color: white;
       border: none;
@@ -55,6 +72,10 @@
     .description {
       text-align: center;
       margin: 0px;
+    }
+
+    .viewBtn{
+      margin-top: 15px;
     }
   }
 }
