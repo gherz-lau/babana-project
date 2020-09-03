@@ -4,17 +4,15 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  //flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
   height: 360px;
   max-height: 360px;
-
   background: whitesmoke;
 
-  &:hover{
-    .imageContainer{
-      .delete-button{
+  &:hover {
+    .imageContainer {
+      .delete-button {
         visibility: visible;
       }
     }
@@ -46,7 +44,7 @@
   .details {
     margin: 15px;
     background-color: white;
-    
+    height: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
