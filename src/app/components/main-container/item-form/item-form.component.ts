@@ -79,6 +79,7 @@ export class ItemFormComponent implements OnInit {
       this.interval = this.imageOptions.length -1;
     } else {
       this.interval--;
+      
     }
     this.form.image = this.imageOptions[this.interval];
   }

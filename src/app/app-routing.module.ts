@@ -11,9 +11,6 @@ const routes: Routes = [
     component: ItemBoxComponent,
   },
   { path: 'details/:id', component: DetailsComponent },
-
-
-
 ];
 
 @NgModule({
