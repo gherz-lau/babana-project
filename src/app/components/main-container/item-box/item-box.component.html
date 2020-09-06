@@ -1,30 +1,11 @@
 <section class="item-box">
     <div class="container">
         <h2 class="title">Algunos Items</h2>
-        <!--<button (click)="addNewItem()" class="add-button">Agregar Nuevo Item</button> agregamos la clase add-button, para poder identificarlo y hacerle css-->
-   
-        <a href="#openModal">Agregar un nuevo Item</a>
-
-        <div id="openModal" class="modalDialog">
-            <div>    
-            <a href="#close" title="Close" class="close">X</a>
-                <h2>Agregar Item</h2>
-                <p>Imagen: <input  type="file" name="nombre" required></p>
-                <p>Titulo: <input type="text" name="nombre" required></p>
-                <p>Descripcion: <input type="text" name="nombre" required></p>
-                <button (click)="addNewItem()" class="add-button">Agregar Nuevo Item</button> 
-            </div>
-       
-
-        </div>
-
-
-
+        <button (click)="addNewItem()" class="add-button">Agregar Nuevo Item</button>
     </div>
     <div class="container-items">
-        <div *ngFor="let item of listItems"> <!--genera una plantilla para cada elemento de una coleccion-->
-            <!--<app-item [itemObj]="item"></app-item> GENERAS UN ITEM--> 
-            <app-item [itemObj]="item" (autoKillEmit)="killChild($event)"></app-item> <!--Generas un Item capaz de emitir un evento del tipo "suicidarse"-->
+        <div *ngFor="let item of listItems">
+            <app-item [itemObj]="item" (autoKillEmit)="killChild($event)"></app-item>
         </div>
     </div>
 </section>

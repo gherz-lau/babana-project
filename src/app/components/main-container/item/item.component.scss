@@ -4,28 +4,24 @@
   width: 200px;
   display: flex;
   flex-direction: column;
-  //flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
-  height: 360;
-  max-height: 360;
+  height: 360px;
+  max-height: 360px;
 
   background: whitesmoke;
-  
-//cambios del 27 de ago
 
-&:hover{   //para que sea visible solo en el evento "over" o sea, al pasar sobre el
-  .imageContainer{
-    .delete-button{
-      visibility: visible;
+  &:hover{
+    .imageContainer{
+      .delete-button{
+        visibility: visible;
+      }
+
+      .edit-button {
+        visibility: visible;
+      }
     }
   }
-}
-
-
-//fin de cambios 27ago
-
-
 
   .imageContainer {
     margin: 0;
@@ -35,44 +31,59 @@
       object-fit: cover;
       justify-items: center;
     }
+    .delete-button {
+      position: absolute;
+      margin-left: -26px;
+      margin-top: 5px;
+      background-color: white;
+      border: none;
+      color: rgb(160, 160, 160);
+      font-size: 18px;
+      visibility: hidden;
+      &:hover {
+        color: purple;
+        cursor: pointer;
+      }
+    }
 
-//estilo del botoncillo eliminar
+    .edit-button {
+      position: absolute;
+      margin-left: -50px;
+      margin-top: 5px;
+      background-color: white;
+      border: none;
+      color: rgb(160, 160, 160);
+      font-size: 18px;
+      visibility: hidden;
+      &:hover {
+        color: purple;
+        cursor: pointer;
+      }
+    }
 
 
-.delete-button {
-  position: absolute;
-  margin-left: -26px;
-  margin-top: 5px;
-  background-color: white;
-  border: none;
-  color: rgb(160, 160, 160);
-  font-size: 18px;
-  visibility: hidden;
-  &:hover {
-    color: purple;
-    cursor: pointer;
   }
-}
-
-}
   .details {
     margin: 15px;
-    background-color: white; 
-    height: 100%;
+    background-color: white;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     .title {
-      margin: 0.5em 0 0.5em 0; 
+      margin: 0.5em 0 0.5em 0; //throuble
     }
-
-       
     .description {
       text-align: center;
       margin: 0px;
-      
     }
+
+
+    .viewBtn{
+      margin-top: 15px;
+    }
+
+
   }
 }

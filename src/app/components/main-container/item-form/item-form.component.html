@@ -1,12 +1,25 @@
-<section id="BananaTest" class="bindi">
-    <div class="container">
+<form class="itemForm">
+    <img [src]="form.image" alt="" height="200" width="200" (click)="stopInterval()">
+    <div class="imageRandom">
+        
 
-        <form class="form-input">
-            <h3>B i n d i n g <br /> T e s t</h3>
-            <br />
-            <label for="myInput">El Input </label>
-            <input type="text" placeholder="Escribe" name="myInput" [(ngModel)]="title">
+        <button class="prevBtn" (click)="prev()"><</button>
+            <button class="ranBtn" (click)="startInterval()"> * </button>	            
+         
+            <button class="nextBtn" (click)="next()">></button>	                <button class="ranBtn" (click)="startInterval()"> * </button>
+                    <button class="nextBtn" (click)="next()">></button>
 
-        </form>
+
     </div>
-</section>
+
+    <div class="form-container">
+        <p>Description</p>
+        <input type="text" name="description" [(ngModel)]="form.description">
+        
+        <div class="buttons-container">
+            <button class="cancelBtn" (click)="cancel()">Cancel</button>
+            <button class="saveBtn" (click)="save()">Save</button>
+        </div>
+    </div>
+
+</form>

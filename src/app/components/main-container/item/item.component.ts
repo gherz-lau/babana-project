@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -9,16 +9,36 @@ export class ItemComponent implements OnInit {
   @Input()
   itemObj;
 
-  @Output() //para emitters
-  autoKillEmit = new EventEmitter<any>();  //pregunta sobre https://desarrolloweb.com/articulos/generics-typescript.html
+  @Output() //emiters
+  autoKillEmit = new EventEmitter<any>();
 
-
+  isEditing: boolean;
 
   constructor() {}
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+    if (this.itemObj.image) {
+      this.isEditing = false;
+    } else {
+      this.isEditing = true;
+    }
+  }
   deleteItem() {
     this.autoKillEmit.emit(this.itemObj);
   }
-}
+  savedItem(formValue) {
+    this.itemObj = formValue;
+    this.isEditing = false;
+      }
+      cancelItem(formValue) {
+        if (!formValue.title && !formValue.description) {
+          this.deleteItem();
+        } else {
+          this.isEditing = false;
+        }
+      }
+      editItem() {
+        this.isEditing = true;
+
+      }
+    }

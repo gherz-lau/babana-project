@@ -14,4 +14,3 @@ export class HeaderComponent implements OnInit {
 
 }
 
-// LIFT: Locate, Identify, Flat, Try Dry
