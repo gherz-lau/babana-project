@@ -1,12 +1,14 @@
 .footer {
-  background-color: #1d252c;
+  background-color:#1d252c;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
   display: flex;
-height: 100px;
-  //align-items: center; //centra la frase horizontalmente
-  //text-align: center; //hace que el texto esté formateado como centrado
-
-  justify-content: right;
-  //align-items: right;
+   
+  height: 100px;
+  align-items: center; //centra la frase horizontalmente
+  text-align: center; //hace que el texto esté formateado como centrado
+ justify-content: flex-end; 
+  padding-right: 30px;
+  margin-top: 70px;
 }

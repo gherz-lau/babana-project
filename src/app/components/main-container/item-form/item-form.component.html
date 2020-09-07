@@ -7,8 +7,9 @@
     </div>
 
     <div class="form-container">
-        <p>Description</p>
-        <input type="text" name="description" [(ngModel)]="form.description">
+        <!--<p>Description</p>-->
+        <label>Name: <input type="text" name="title" [(ngModel)]="form.title" required></label>
+        <label>Uses: <input type="text" name="description" [(ngModel)]="form.description" required></label>
         <div class="buttons-container">
             <button class="cancelBtn" (click)="cancel()">Cancel</button>
             <button class="saveBtn" (click)="save()">Save</button>

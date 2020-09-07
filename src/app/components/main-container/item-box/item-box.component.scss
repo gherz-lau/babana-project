@@ -1,6 +1,8 @@
 .item-box {
   display: flex;
-  flex-wrap: wrap; /*esto hace que los eventos se ajusten solitos y no sean una fila recta hacia la derecha*/
+  flex-wrap: wrap;
+  justify-content: center;
+ 
 
   .title {
     margin-left: 20px;
@@ -14,13 +16,14 @@
     align-content: center;
 
     .add-button {
-      height: 32px;
+      height: 40px;
+      width: 150px;
       background: purple;
       border: none;
       border-radius: 32px;
       color: #fff;
-      margin-top: 1rem;
-      margin-left: 1rem;
+      margin: 2rem;
+      font-size: 18px;
 
       &:hover {
         background-color: rgb(153, 10, 153);
@@ -34,8 +37,9 @@
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    max-width: 800px;
-    min-width: 800px;
+    max-width: 1200px;
+    min-width: 1200px;
     min-height: 300px;
+    flex-direction: row;
   }
 }

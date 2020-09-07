@@ -94,6 +94,7 @@ export class ItemFormComponent implements OnInit {
   }
 
   cancel() {
-    this.cancelResult.emit(this.form);
+        this.cancelResult.emit(this.form);
+        
   } 
 }

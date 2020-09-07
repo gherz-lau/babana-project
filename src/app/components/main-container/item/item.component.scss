@@ -1,5 +1,5 @@
 .item {
-  border: 1px solid red;
+  border: 5px solid rgb(17, 17, 119);
   margin: 10px;
   width: 200px;
   display: flex;
@@ -31,6 +31,7 @@
       object-fit: cover;
       justify-items: center;
     }
+    
     .delete-button {
       position: absolute;
       margin-left: -26px;
@@ -71,12 +72,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     .title {
-      margin: 0.5em 0 0.5em 0; //throuble
+      margin: 0.3em 0 0.3em 0; //throuble
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
     }
     .description {
       text-align: center;
       margin: 0px;
+      font-size: 18px;
     }
 
 

@@ -14,7 +14,7 @@ h3 {
 }
 
 h1 strong {
-  color: #026fff;
+  color:#026fff;
 }
 
 h1 {
@@ -27,8 +27,8 @@ h1 {
 
 .container {
   width: 1000px;
-  margin: 0 auto;
-  display: inherit;
+  margin: 0;
+  display: flex;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
@@ -39,6 +39,6 @@ h2 {
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 40px;
 }

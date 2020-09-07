@@ -1,8 +1,11 @@
 <section class="item-box">
     <div class="container">
-        <h2 class="title">Algunos Items</h2>
-        <button (click)="addNewItem()" class="add-button">Agregar Nuevo Item</button>
+        <!-- <h2 class="title">Your Items </h2>  -->
+        <button (click)="addNewItem()" class="add-button">Add Item</button>
+       
     </div>
+
+    
     <div class="container-items">
         <div *ngFor="let item of listItems">
             <app-item [itemObj]="item" (autoKillEmit)="killChild($event)"></app-item>

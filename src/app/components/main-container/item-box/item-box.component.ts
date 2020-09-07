@@ -13,13 +13,13 @@ export class ItemBoxComponent implements OnInit {
       title: 'Turnip',
       description: 'Arrojable',
     },
-    
+
   ];
 
-   constructor() {}
-  
+  constructor() { }
 
-  ngOnInit(): void {}
+
+  ngOnInit(): void { }
 
   addNewItem() {
     this.listItems.push({
@@ -28,12 +28,13 @@ export class ItemBoxComponent implements OnInit {
       title: '', //Fire for flowers
       description: '',
     });
-    
+
   }
 
   killChild(item) {
     const index = this.listItems.indexOf(item); //creas una variable llamada index, para guardar ahi el id del item que  se va a matar
     this.listItems.splice(index, 1); //matas el item (orden splice), un solo item, con el index indicado (o sea el id)
-   
   }
+  
+
 }

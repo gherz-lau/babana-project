@@ -14,7 +14,7 @@ export class ItemComponent implements OnInit {
 
   isEditing: boolean;
 
-  constructor() {}
+  constructor() { }
 
   ngOnInit(): void {
     if (this.itemObj.image) {
@@ -23,22 +23,28 @@ export class ItemComponent implements OnInit {
       this.isEditing = true;
     }
   }
+  
   deleteItem() {
     this.autoKillEmit.emit(this.itemObj);
   }
+  
   savedItem(formValue) {
     this.itemObj = formValue;
     this.isEditing = false;
-      }
-      cancelItem(formValue) {
-        if (!formValue.title && !formValue.description) {
-          this.deleteItem();
-        } else {
-          this.isEditing = false;
-        }
-      }
-      editItem() {
-        this.isEditing = true;
+  }
+  
+  
+  cancelItem(formValue) {
+    //if (!formValue.title && !formValue.description) {
+      this.deleteItem();
+  //  } else {
+  //    this.isEditing = false;
+  //  }
+  }
+ 
+ 
+  editItem() {
+    this.isEditing = true;
 
-      }
-    }
+  }
+}
