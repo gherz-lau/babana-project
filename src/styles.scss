@@ -14,7 +14,7 @@ h3 {
 }
 
 h1 strong {
-  color:#026fff;
+  color: #026fff;
 }
 
 h1 {
@@ -41,4 +41,20 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 40px;
+}
+
+.action-button {
+  height: 40px;
+  width: 150px;
+  background: purple;
+  border: none;
+  border-radius: 32px;
+  color: #fff;
+  margin: 2rem;
+  font-size: 18px;
+
+  &:hover {
+    background-color: rgb(153, 10, 153);
+    cursor: pointer;
+  }
 }

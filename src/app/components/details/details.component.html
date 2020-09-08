@@ -1,2 +1,14 @@
-<p>details works!</p>
-<a href="" [routerLink]="['/']" class="viewBtn">Return</a>
+<div class="details-page">
+    <h1 style="color:red">DETAILS PAGE</h1>
+
+    <div class="box">
+        <img [src]="itemObj.image" alt="">
+        <div class="box-details">
+            <h2>{{itemObj.title}}</h2>
+            <p>{{itemObj.description}}</p>
+        </div>
+    </div>
+
+
+    <button [routerLink]="['/']" class="action-button">Return</button>
+</div>
