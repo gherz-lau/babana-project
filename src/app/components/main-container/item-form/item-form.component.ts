@@ -16,7 +16,6 @@ export class ItemFormComponent implements OnInit {
     '/assets/Turnip.jpg',
   ];
 
-
   form = {
     id: -1,
     image: '',

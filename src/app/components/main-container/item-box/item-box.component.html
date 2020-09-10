@@ -1,35 +1,14 @@
 <section class="item-box">
-    <div class="container">
-<<<<<<< HEAD
-        
-        <button (click)="addNewItem()" class="action-button">Add Item</button>
-       
-=======
-        <!-- <h2 class="title">Your Items </h2>  -->
-        <button (click)="addNewItem()" class="action-button">Add Item</button>
-
->>>>>>> 97a9eae339ad03f11aee157f9010fab949118d3d
-    </div>
-
-
-    <div class="container-items">
-<<<<<<< HEAD
-        <!--<div *ngFor="let item of listItems">-->
-            <div *ngFor="let item of miServicio.listItems">
-=======
-        <div *ngFor="let item of miServicio.listItems">
->>>>>>> 97a9eae339ad03f11aee157f9010fab949118d3d
-            <app-item [itemObj]="item" (autoKillEmit)="killChild($event)"></app-item>
+        <div class="container">
+                <button (click)="addNewItem()" class="action-button">Add Item</button>
         </div>
-    </div>
-
-    
-    <div class="container-items"  *ngIf = "miServicio.selectedItem">
-        <p>Detail box</p>
-
-        <app-details [itemObj]= "miServicio.selectedItem" ></app-details>
-
-    </div>
-
-
+        <div class="container-items">
+                <div *ngFor="let item of miServicio.listItems">
+                        <app-item [itemObj]="item" (autoKillEmit)="killChild($event)"></app-item>
+                </div>
+                <div class="container-items" *ngIf="miServicio.selectedItem">
+                        <p>Detail box</p>
+                        <app-details [itemObj]="miServicio.selectedItem"></app-details>
+                </div>
+        </div>
 </section>
