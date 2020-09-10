@@ -10,8 +10,11 @@ const routes: Routes = [
     path: '',
     component: ItemBoxComponent,
   },
+  
+  
   { path: 'details/:id', component: DetailsComponent },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
