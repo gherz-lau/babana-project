@@ -4,12 +4,16 @@ import { ItemBoxComponent } from './components/main-container/item-box/item-box.
 import { DetailsComponent } from './components/details/details.component';
 
 const routes: Routes = [
+
   {
     path: '',
     component: ItemBoxComponent,
   },
+  
+  
   { path: 'details/:id', component: DetailsComponent },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -11,7 +11,6 @@ import { ItemFormComponent } from './components/main-container/item-form/item-fo
 import { FooterComponent } from './components/footer/footer.component';
 import { DetailsComponent } from './components/details/details.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -27,8 +27,8 @@ h1 {
 
 .container {
   width: 1000px;
-  margin: 0 auto;
-  display: inherit;
+  margin: 0;
+  display: flex;
   justify-content: inherit;
   align-items: inherit;
   height: inherit;
@@ -39,6 +39,22 @@ h2 {
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 40px;
+}
+
+.action-button {
+  height: 40px;
+  width: 150px;
+  background: purple;
+  border: none;
+  border-radius: 32px;
+  color: #fff;
+  margin: 2rem;
+  font-size: 18px;
+
+  &:hover {
+    background-color: rgb(153, 10, 153);
+    cursor: pointer;
+  }
 }

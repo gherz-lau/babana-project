@@ -1,14 +1,11 @@
 .band {
   //selector de la banda donde puse la frase "suoer mario bros family and co"
 
-  height: 120px;
+  height: 130px;
   background-color: #1d252c;
   display: flex;
-  justify-content: center; //centra la frase verticalmente en el espacio de la band (o sea los 120px)
-  align-items: center; //centra la frase horizontalmente
+  justify-content: center; //centra la frase verticalmente en el espacio de la band (o sea los 150px)
   text-align: center; //hace que el texto esté formateado como centrado
 }
-
-
 
 

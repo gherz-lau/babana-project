@@ -33,7 +33,10 @@ export class ItemFormComponent implements OnInit {
 
   interval;
   @Output()
+
   saveResult = new EventEmitter<any>();
+
+
   @Output()
   cancelResult = new EventEmitter<any>();
 
@@ -46,7 +49,9 @@ export class ItemFormComponent implements OnInit {
     } else {
       this.interval = this.imageOptions.indexOf(this.form.image);
     }
+
   }
+
   startInterval() {
     this.interval = setInterval(() => {
       let index = Math.floor(Math.random() * this.imageOptions.length);
@@ -70,9 +75,10 @@ export class ItemFormComponent implements OnInit {
     if (this.interval >= this.imageOptions.length - 1) {
       this.interval--;
     } else if (this.interval == 0) {
-      this.interval = this.imageOptions.length - 1;
+      this.interval = this.imageOptions.length -1;
     } else {
       this.interval--;
+      
     }
     this.form.image = this.imageOptions[this.interval];
   }
@@ -85,7 +91,9 @@ export class ItemFormComponent implements OnInit {
     }
     this.form.image = this.imageOptions[this.interval];
   }
+
   cancel() {
-    this.cancelResult.emit(this.form);
-  }
+        this.cancelResult.emit(this.form);
+        
+  } 
 }

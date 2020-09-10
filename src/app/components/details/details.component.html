@@ -1,1 +1,17 @@
-<p>details works!</p>
+
+<div  class="details-page"> 
+    <h1 style="color:rgb(16, 16, 99)">DETAILS PAGE</h1>
+    
+        <div class="box">
+            <img [src]="itemObj.image" alt="">
+            <div class="box-details">
+                <h2>{{itemObj.title}}</h2>
+                <p>{{itemObj.description}}</p>
+            </div>
+        </div>
+    
+    
+        <button (click)="skip()" class="action-button">Skip</button>
+    
+    
+    </div> 
