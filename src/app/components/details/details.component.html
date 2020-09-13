@@ -1,17 +1,24 @@
-
-<div  class="details-page"> 
-    <h1 style="color:rgb(16, 16, 99)">DETAILS PAGE</h1>
-    
-        <div class="box">
-            <img [src]="itemObj.image" alt="">
-            <div class="box-details">
-                <h2>{{itemObj.title}}</h2>
-                <p>{{itemObj.description}}</p>
-            </div>
+<div *ngIf="!isEditing">
+<div class="details-page">
+    <div class="box">
+        <img [src]="itemObj.image" alt="">
+        <div class="box-details">
+            <h1 style="color:rgb(16, 16, 99)">DETAILS PAGE</h1>
+            <h2>{{itemObj.title}}</h2>
+            <p>{{itemObj.description}}</p>
+            <div class="box-btns">
+            <button (click)="editItem()" class="action-button">Edit</button>
+            <button (click)="skip()" class="action-button">Skip</button>
         </div>
+        
+        </div>
+
+    </div>
+
+</div>
+</div>
+<app-item-form [item]="itemObj" *ngIf="isEditing" (saveResult)="savedItem($event)" (cancelResult)= "skip()" > <!--"cancelItem($event)">-->
+
+</app-item-form>
+        
     
-    
-        <button (click)="skip()" class="action-button">Skip</button>
-    
-    
-    </div> 

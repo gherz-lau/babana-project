@@ -34,13 +34,12 @@
 
   .container-items {
     display: flex;
-    justify-content: center;
+    justify-content: last baseline;
     align-content: center;
     flex-wrap: wrap;
-
-    min-width: 800px;
-    max-width: 800px;
+    min-width: 1200px;
+    max-width: 1200px;
     min-height: 300px;
-    flex-direction: row;
+    //flex-direction: row;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SkipSelf } from '@angular/core';
 import { ItemsService } from './../../../services/items.service';
 
 @Component({
@@ -12,6 +12,7 @@ export class ItemBoxComponent implements OnInit {
   ngOnInit(): void {}
 
   addNewItem() {
+    
     this.miServicio.listItems.push({
       id:
         this.miServicio.listItems.length > 0
