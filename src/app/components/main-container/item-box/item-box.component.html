@@ -1,4 +1,4 @@
-<section class="item-box">
+<!-- <section class="item-box">
         <div class="container">
                 <button (click)="addNewItem()" class="action-button">Add Item</button>
         </div>
@@ -7,8 +7,25 @@
                         <app-item [itemObj]="item" (autoKillEmit)="killChild($event)"></app-item>
                 </div>
                 <div class="container-items" *ngIf="miServicio.selectedItem">
-                        <!--<p>Detail box</p>-->
                         <app-details [itemObj]="miServicio.selectedItem"></app-details>
                 </div>
         </div>
-</section>
+</section> -->
+
+
+<div class="item-box-reload">
+        <div class="header">
+                <button (click)="addNewItem()" class="action-button">Add Item</button>
+        </div>
+        <div class="container">
+                <div class="list">
+
+                        <app-item *ngFor="let item of miServicio.listItems" [itemObj]="item"
+                                (autoKillEmit)="killChild($event)"></app-item>
+
+                </div>
+                <div class="details" *ngIf="miServicio.selectedItem">
+                        <app-details [itemObj]="miServicio.selectedItem"></app-details>
+                </div>
+        </div>
+</div>
