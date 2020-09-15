@@ -1,60 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
 
-h1,
-h2,
-h3 {
-  font-family: "Source Sans Pro", sans serif;
-  align-content: center;
-  justify-items: center;
-}
+// h1,
+// h2,
+// h3 {
+//   font-family: "Source Sans Pro", sans serif;
+//   align-content: center;
+//   justify-items: center;
+// }
 
-.body {
-  margin: 0;
-  padding: 500;
-}
+// .body {
+//   margin: 0;
+//   padding: 500;
+// }
 
-h1 strong {
-  color: #026fff;
-}
+// h1 strong {
+//   color: #026fff;
+// }
 
-h1 {
-  font-size: 40px;
-  line-height: 1.5;
-  letter-spacing: -0.2px;
-  color: white;
-  margin: 0;
-}
+// h1 {
+//   font-size: 40px;
+//   line-height: 1.5;
+//   letter-spacing: -0.2px;
+//   color: white;
+//   margin: 0;
+//}
 
-.container {
-  width: 1000px;
-  margin: 0;
-  display: flex;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-}
+// .container {
+//   width: 1000px;
+//   margin: 0;
+//   display: flex;
+//   justify-content: inherit;
+//   align-items: inherit;
+//   height: inherit;
+// }
 
-h2 {
-  color: #026fff;
-  text-transform: uppercase;
-  font-family: "Source Sans Pro", sans serif;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 40px;
-}
+// h2 {
+//   color: #026fff;
+//   text-transform: uppercase;
+//   font-family: "Source Sans Pro", sans serif;
+//   font-weight: bold;
+//   font-size: 20px;
+//   margin-bottom: 40px;
+// }
 
-.action-button {
-  height: 40px;
-  width: 150px;
-  background: purple;
-  border: none;
-  border-radius: 32px;
-  color: #fff;
-  margin: 2rem;
-  font-size: 18px;
+// .action-button {
+//   height: 40px;
+//   width: 150px;
+//   background: purple;
+//   border: none;
+//   border-radius: 32px;
+//   color: #fff;
+//   margin: 2rem;
+//   font-size: 18px;
 
-  &:hover {
-    background-color: rgb(153, 10, 153);
-    cursor: pointer;
-  }
-}
+//   &:hover {
+//     background-color: rgb(153, 10, 153);
+//     cursor: pointer;
+//   }
+// }

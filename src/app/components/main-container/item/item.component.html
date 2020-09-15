@@ -1,4 +1,4 @@
-<article class="item">
+<!-- <article class="item">
     <div *ngIf="!isEditing">
         <figure class="imageContainer">
             <img class="image" [src]="itemObj.image" height="200" width="200">
@@ -13,7 +13,7 @@
             <p class="description">{{itemObj.description}}</p>
                        
            
-            <button class="viewBtn" title="ViewDetails" (click)="viewDetails()">View</button> <!--bien-->
+            <button class="viewBtn" title="ViewDetails" (click)="viewDetails()">View</button>
                  
         </div>
     </div>
@@ -21,4 +21,20 @@
     <app-item-form [item]="itemObj" *ngIf="isEditing" (saveResult)="savedItem($event)"
         (cancelResult)="cancelItem($event)">
     </app-item-form>
-</article>
+</article> -->
+
+<div class="card" *ngIf="!isEditing">
+    <img [src]="itemObj.image" class="card-img-top img-fluid img-item" alt="item">
+    <div class="card-body">
+        <h5 class="card-title">{{itemObj.title}}</h5>
+        <p class="card-text">{{itemObj.description}}</p>
+        <a href="javascript:;" class="btn btn-primary btn-sm" (click)="viewDetails()">View</a>
+    </div>
+</div>
+<div class="card" *ngIf="isEditing">
+    <div class="card-body">
+        <app-item-form [item]="itemObj" *ngIf="isEditing" (saveResult)="savedItem($event)"
+            (cancelResult)="cancelItem($event)">
+        </app-item-form>
+    </div>
+</div>
