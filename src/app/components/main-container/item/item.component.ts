@@ -18,7 +18,7 @@ export class ItemComponent implements OnInit {
 
   isEditing: boolean;
 
-  constructor(private miServicio: ItemsService) {}
+  constructor(private miServicio: ItemsService) { }
 
   ngOnInit(): void {
     if (this.itemObj.image) {
@@ -33,17 +33,14 @@ export class ItemComponent implements OnInit {
   }
 
   savedItem(formValue) {
-    //this.itemObj = formValue;
+
     this.miServicio.setItem(formValue);
     this.isEditing = false;
   }
 
   cancelItem(formValue) {
-    //if (!formValue.title && !formValue.description) {
     this.deleteItem();
-    //  } else {
-    //    this.isEditing = false;
-    //  }
+
   }
 
   editItem() {
@@ -51,10 +48,8 @@ export class ItemComponent implements OnInit {
   }
 
 
-  viewDetails(){
-
+  viewDetails() {
     this.miServicio.selectedItem = this.itemObj;
-
   }
 
 

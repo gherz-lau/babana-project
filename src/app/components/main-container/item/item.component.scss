@@ -6,14 +6,15 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  height: 360px;
-  max-height: 360px;
+  height: auto; //altura
+  max-height: 370px;
+  min-height: 370px;
 
   background: whitesmoke;
 
-  &:hover{
-    .imageContainer{
-      .delete-button{
+  &:hover {
+    .imageContainer {
+      .delete-button {
         visibility: visible;
       }
 
@@ -31,7 +32,7 @@
       object-fit: cover;
       justify-items: center;
     }
-    
+
     .delete-button {
       position: absolute;
       margin-left: -26px;
@@ -60,18 +61,16 @@
         cursor: pointer;
       }
     }
-
-
   }
   .details {
     margin: 15px;
     background-color: white;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     .title {
       margin: 0.3em 0 0.3em 0; //throuble
       font-size: 30px;
@@ -83,11 +82,8 @@
       font-size: 18px;
     }
 
-
-    .viewBtn{
+    .viewBtn {
       margin-top: 15px;
     }
-
-
   }
 }
