@@ -1,45 +1,45 @@
-.item-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+// .item-box {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
  
 
-  .title {
-    margin-left: 20px;
-    justify-content: center;
-  }
+//   .title {
+//     margin-left: 20px;
+//     justify-content: center;
+//   }
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+//   .container {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-content: center;
 
-    .add-button {
-      height: 40px;
-      width: 150px;
-      background: purple;
-      border: none;
-      border-radius: 32px;
-      color: #fff;
-      margin: 2rem;
-      font-size: 18px;
+//     .add-button {
+//       height: 40px;
+//       width: 150px;
+//       background: purple;
+//       border: none;
+//       border-radius: 32px;
+//       color: #fff;
+//       margin: 2rem;
+//       font-size: 18px;
 
-      &:hover {
-        background-color: rgb(153, 10, 153);
-        cursor: pointer;
-      }
-    }
-  }
+//       &:hover {
+//         background-color: rgb(153, 10, 153);
+//         cursor: pointer;
+//       }
+//     }
+//   }
 
-  .container-items {
-    display: flex;
-    justify-content: last baseline;
-    align-content: center;
-    flex-wrap: wrap;
-    min-width: 1200px;
-    max-width: 1200px;
-    min-height: 300px;
-    //flex-direction: row;
-  }
-}
+//   .container-items {
+//     display: flex;
+//     justify-content: last baseline;
+//     align-content: center;
+//     flex-wrap: wrap;
+//     min-width: 1200px;
+//     max-width: 1200px;
+//     min-height: 300px;
+//     //flex-direction: row;
+//   }
+// }

@@ -1,19 +1,31 @@
 <div *ngIf="!isEditing">
-<div class="details-page">
-    <div class="box">
-        <img [src]="itemObj.image" alt="">
+<!--<div class="details-page">-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row">
+        <div class="col-sm-6"> 
+        
+        
+        <img [src]="itemObj.image" alt="" height="200px" width="200px">
+        
+    </div>
+    
+    <div class="col-sm-6">
         <div class="box-details">
-            <h1 style="color:rgb(16, 16, 99)">DETAILS PAGE</h1>
+            <h1 class="display-4">Details Page</h1>
+            <hr class="my-4">
             <h2>{{itemObj.title}}</h2>
             <p>{{itemObj.description}}</p>
-            <div class="box-btns">
-            <button (click)="editItem()" class="action-button">Edit</button>
-            <button (click)="skip()" class="action-button">Skip</button>
+               
         </div>
         
-        </div>
+    </div>   
 
-    </div>
+        </div>
+        <div class="box-btns">
+            <button (click)="editItem()" class="btn btn-secondary btn-lg">Edit</button>
+            <button (click)="skip()" class="btn btn-secondary btn-lg">Skip</button>
+        </div>
+   <!-- </div> -->
 
 </div>
 </div>

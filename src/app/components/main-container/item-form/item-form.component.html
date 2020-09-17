@@ -1,19 +1,19 @@
-<form class="itemForm">
-    <img [src]="form.image" alt="" height="200" width="200" (click)="stopInterval()">
-    <div class="imageRandom">
-        <button class="prevBtn" (click)="prev()"><</button>
-        <button class="ranBtn" (click)="startInterval()"> * </button>
-        <button class="nextBtn" (click)="next()">></button> 
+<form class="item-form">
+    <div class="form-group">
+        <img [src]="form.image" class="img-item" alt="" (click)="stopInterval()">
     </div>
-
-    <div class="form-container">
-        <!--<p>Description</p>-->
-        <label>Name: <input type="text" name="title" [(ngModel)]="form.title" required></label>
-        <label>Uses: <input type="text" name="description" [(ngModel)]="form.description" required></label>
-        <div class="buttons-container">
-            <button class="cancelBtn" (click)="cancel()">Cancel</button>
-            <button class="saveBtn" (click)="save()">Save</button>
-        </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control form-control-sm" name="title" [(ngModel)]="form.title"
+            aria-describedby="emailHelp">
     </div>
-
+    <div class="form-group">
+        <label for="exampleInputPassword1">Description</label>
+        <input type="text" class="form-control form-control-sm" name="description" [(ngModel)]="form.description">
+    </div>
+    
+    <div class="box-btns">
+    <button class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    <button class="btn btn-secondary" (click)="save()">Save</button>
+    </div>
 </form>
